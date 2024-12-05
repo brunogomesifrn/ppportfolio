@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Portfólio On-line do IFRN</title>
     <!--Fav icon-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!---Bootstrap-->
@@ -11,9 +11,10 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
     <!--Bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--CSS Custom-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS Exact Time-->
+    <link rel="stylesheet" href="css/styles.css">
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
@@ -27,7 +28,7 @@
     <div class="container">
        
         <a href="#" class="navbar-brand">
-            <img src="img/I_F-removebg-preview.png" alt="Logo" id="navbar-logo">
+            <img src="img/logo_temp.png" alt="Logo" id="navbar-logo">
         </a>
 
         <div class="collapse navbar-collapse" id="navbar-items">
@@ -42,13 +43,19 @@
             </form>
 
             
-            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex">Login</button>
+            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex"><a href="login.html" class="nav-link">Login</a></button>
+            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex"><a href="login.html" class="nav-link">Cadastro</a></button>
+            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex"><a href="login.html" class="nav-link">Perfil</a></button>
+            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex"><a href="login.html" class="nav-link">Sair</a></button>
         </div>
     </div>
 </nav>
 
-<form class="d-flex d-lg-none mt-0" id="search-form-mobile">
 
+</br>
+
+<form class="d-flex d-lg-none mt-0" id="search-form-mobile">
+   
     <div class="input-group">
         <input type="search" class="form-control" placeholder="Faça sua busca..." aria-label="search">
         <button class="btn secondary-bg-color" type="submit">
@@ -56,6 +63,7 @@
         </button>
     </div>
 </form>
+
 
 <!-- NAVBAR INFERIOR -->
 <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
@@ -68,20 +76,39 @@
         <div class="collapse navbar-collapse" id="bottom-navbar">
             <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Parceria</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Campi</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Produções</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Portfólio</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link " id="acoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produções</a>
+                    <ul class="dropdown-menu" aria-labelledby="acoesDropdown">
+                        <li><a class="dropdown-item" href="Nucleos_acao.html">Núcleos de Pesquisa</a></li>
+                        <li><a class="dropdown-item" href="#">Artigos</a></li>
+                        <li><a class="dropdown-item" href="#">Livros</a></li>
+                        <li><a class="dropdown-item" href="#">Patentes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Parcerias</a></li>
                 <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+
+                
                 <li class="nav-item d-lg-none"> <br>
                     <button class="btn btn-spaced-secondary w-100">Login</button>
                 </li>
+                <li class="nav-item d-lg-none"> <br>
+                    <button class="btn btn-spaced-secondary w-100">Cadastro</button>
+                </li>
+                <li class="nav-item d-lg-none"> <br>
+                    <button class="btn btn-spaced-secondary w-100">Perfil</button>
+                </li>
+                <li class="nav-item d-lg-none"> <br>
+                    <button class="btn btn-spaced-secondary w-100">Sair</button>
+                </li>
+                
             </ul>
         </div>
     </div>
 </nav>
     <div class="container py-5">
-        <h2 class="text-center primary-color">Entre em Contato</h2>
+        <h2 class="text-center primary-color">CONTATO</h2>
         <strong><p class="text-center secondary-color">Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e entraremos em contato.</p></strong>
 
         <form action="#" method="POST" class="mt-4">

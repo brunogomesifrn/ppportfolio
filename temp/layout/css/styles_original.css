@@ -5,6 +5,11 @@
     font-weight: 500;
 }
 
+.titulo
+{
+    color: #1e7e34;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif; 
 }
