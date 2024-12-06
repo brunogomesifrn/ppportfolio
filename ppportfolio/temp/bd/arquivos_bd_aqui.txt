@@ -1,0 +1,1 @@
+Tudo que for referente ao banco de dados inserir nesta pasta, conforme tarefas do kanban.
