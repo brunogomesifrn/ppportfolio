@@ -17,8 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body{
-    background-color: #fff;
-    color: #FFF;
+    background-color: aliceblue;
+    color: white;
     
 }
 
@@ -344,10 +344,22 @@ body{
     
 }
 
+.Acoes{
+background-color: white;
+}
 
+
+
+#best-sellers {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
 
 #best-sellers{
     padding: 4em 0;
+    
     
 }
 
@@ -641,7 +653,7 @@ ol, ul {
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: white;
     font-family: 'Playfair Display', serif;
     color: #333;
 }
