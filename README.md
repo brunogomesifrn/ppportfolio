@@ -5,15 +5,18 @@
 - virtualenv venv
 - python -m venv venv
 
-2. Instalar as bibliotecas necessárias para a execução do projeto:
+2. Iniciar o ambiente virtual
+- venv\Script\activate
+
+3. Instalar as bibliotecas necessárias para a execução do projeto:
 - pip install django
 - pip install Pillow
 - pip install django-widget-tweaks
 
-3. Clonar o projeto:
+4. Clonar o projeto:
 - git clone https://github.com/brunogomesifrn/ppportfolio
 
-4. Executar comandos de criação e atualização do banco de dados:
+5. Executar comandos de criação e atualização do banco de dados:
 - python manage.py makemigrations usuario core portfolio
 - python manage.py migrate
 
@@ -38,6 +41,8 @@
         - git switch usuario
     - Verificar se houve atualizações na branch principal (main) e atualizar o branch atual (usuario):
         - git pull origin main --rebase
+    - Verificar se houve atualizações na branch usuario (a que está trabalhando atualmente):
+        - git pull origin usuario --rebase
     - Você está na branch usuario, após as modificações, basta seguir os comandos normais de atualização:
         - git add .
         - git commit -m "comentário"
