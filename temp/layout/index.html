@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio On-line do IFRN</title>
+    <!--Fav icon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!---Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS Exact Time-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg primary-bg-color py-0 px-2" id="navbar">
+    <div class="container">
+       
+        <a href="#" class="navbar-brand">
+            <img src="img/logo_temp.png" alt="Logo" id="navbar-logo">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+           
+            <form class="d-flex ms-auto d-none d-lg-flex" id="search-form">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Faça sua busca..." aria-label="search">
+                    <button class="btn secondary-bg-color" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+
+            
+            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex"><a href="login.html" class="nav-link">Login</a></button>
+            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex"><a href="login.html" class="nav-link">Cadastro</a></button>
+            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex"><a href="login.html" class="nav-link">Perfil</a></button>
+            <button class="btn btn-spaced-secondary ms-auto d-none d-lg-flex"><a href="login.html" class="nav-link">Sair</a></button>
+        </div>
+    </div>
+</nav>
+
+
+</br>
+
+<form class="d-flex d-lg-none mt-0" id="search-form-mobile">
+   
+    <div class="input-group">
+        <input type="search" class="form-control" placeholder="Faça sua busca..." aria-label="search">
+        <button class="btn secondary-bg-color" type="submit">
+            <i class="bi bi-search"></i>
+        </button>
+    </div>
+</form>
+
+
+<!-- NAVBAR INFERIOR -->
+<nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="bottom-navbar">
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Portfólio</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link " id="acoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produções</a>
+                    <ul class="dropdown-menu" aria-labelledby="acoesDropdown">
+                        <li><a class="dropdown-item" href="Nucleos_acao.html">Núcleos de Pesquisa</a></li>
+                        <li><a class="dropdown-item" href="#">Artigos</a></li>
+                        <li><a class="dropdown-item" href="#">Livros</a></li>
+                        <li><a class="dropdown-item" href="#">Patentes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Parcerias</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+
+                
+                <li class="nav-item d-lg-none"> <br>
+                    <button class="btn btn-spaced-secondary w-100">Login</button>
+                </li>
+                <li class="nav-item d-lg-none"> <br>
+                    <button class="btn btn-spaced-secondary w-100">Cadastro</button>
+                </li>
+                <li class="nav-item d-lg-none"> <br>
+                    <button class="btn btn-spaced-secondary w-100">Perfil</button>
+                </li>
+                <li class="nav-item d-lg-none"> <br>
+                    <button class="btn btn-spaced-secondary w-100">Sair</button>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <!---FIM NAVBAR-->
+   <!--BANNER DESTAQUE-->
+
+   <div class="row text-center mt-4 mb-3">
+    <h3 class="title titulo">O QUE DESEJA CONHECER?</h3>
+
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="img/icone_cursos.png" alt="Generic placeholder image" width="140" height="140">
+      <h2></h2>   
+      <p><a class="btn btn-secondary" href="#" role="button">Cursos &raquo;</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="img/icone_areas.png" alt="Generic placeholder image" width="140" height="140">
+      <h2></h2>  
+      <p><a class="btn btn-secondary" href="#" role="button">Áreas de Atuação &raquo;</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="img/icone_producoes.png" alt="Generic placeholder image" width="140" height="140">
+      <h2></h2>
+      <p><a class="btn btn-secondary" href="#" role="button">Produções &raquo;</a></p>
+    </div>
+    </div>
+
+
+   <div class="container-fluid" id="bottom-banner">
+    <div class="row align-items-center">
+     
+        <div class="col-12 col-md-6">
+            <h4 class="primary-color offer-subtitle">Sobre o Portfólio On-line</h4>
+            <h2 class="light-color"></h2>
+            <p class="secondary-color conteudo">
+                O Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)  
+                é reconhecido por seu compromisso com a formação integral dos alunos, fundamentado no tripé ensino, pesquisa e extensão.  
+                Este modelo educativo vai além das aulas tradicionais, integrando teoria e prática para preparar os estudantes para os desafios do mercado de trabalho e da sociedade.
+            </p>
+            <p class="secondary-color conteudo">
+                Pensando em ampliar as oportunidades para os nossos alunos e fortalecer as parcerias externas, desenvolvemos o Portfólio  
+                On-line do IFRN, um sistema inovador que organiza e apresenta de forma estruturada todas as competências, projetos e 
+                atividades realizadas no Instituto.
+            </p>
+        </div>
+        
+        <div class="col-12 col-md-6">
+            <img src="img/campus-canguaretama.webp" alt="Campus Canguaretama IFRN" class="img-fluid rounded shadow-lg">
+        </div>
+    </div>
+</div>
+
+
+<!--PRODUTOS NOVOS-->
+<div class="container">
+    <div class="row text-center">
+        <!--
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+        <h2></h2>   
+        <p><a class="btn btn-secondary" href="#" role="button">Áreas &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+        <h2></h2>  
+        <p><a class="btn btn-secondary" href="#" role="button">Campi &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+        <h2></h2>
+        <p><a class="btn btn-secondary" href="#" role="button">Produções &raquo;</a></p>
+      </div>-->
+
+
+      <section>
+
+ <!-- NOVOS CARDS -->
+<div class="numbers-container">
+    <div class="number-card">
+      <div class="number">53</div>
+      <div class="text">Cursos</div>
+    </div>
+    <div class="number-card">
+      <div class="number">500</div>
+      <div class="text">Projetos</div>
+    </div>
+    <div class="number-card">
+      <div class="number">10</div>
+      <div class="text">Produções</div>
+    </div>
+    <div class="number-card">
+      <div class="number">5</div>
+      <div class="text">Patentes</div>
+    </div>
+  </div>
+
+
+  </section>
+  
+  <section class="Acoes">
+    <!-- BEST SELLERS -->
+    <div class="container" id="best-sellers">
+      <h2 class="title primary-color">ÚLTIMAS AÇÕES</h2>
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="img/DSC_2188.JPG" alt="" class="card-img-top img-fluid">
+            <div class="card-body">
+              <p class="card-category secondary-color"></p>
+              <h5 class="card-title"></h5>
+              <p><strong>Artigo Publicado em Período Internacional na área de IoT</strong></p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="img/Cópia de DSC_2860.JPG" alt="" class="card-img-top img-fluid">
+            <div class="card-body">
+              <p class="card-category secondary-color"></p>
+              <h5 class="card-title"></h5>
+              <p><strong>Alunos desenvolvem protótipo de equipamento na área da saúde</strong></p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="img/DSC_0192.JPG" alt="" class="card-img-top img-fluid">
+            <div class="card-body">
+              <p class="card-category secondary-color"></p>
+              <h5 class="card-title"></h5>
+              <p><strong>Núcleo de Pesquisa ganha prêmio em campeonato de Robótica</strong></p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="img/basquete.JPG" alt="" class="card-img-top img-fluid">
+            <div class="card-body">
+              <p class="card-category secondary-color"></p>
+              <h5 class="card-title"></h5>
+              <p><strong>Campus Canguaretama fecha parceria com empresa de software</strong></p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+            
+             <!--PRODUTOS NOVOS aqui não está em uso-->
+              <div class="container"   id="new-products">
+                <h2 class="title primary-color"></h2>
+               
+                    </div>
+                   </div>
+                    </div> 
+                    </div>
+                 </div>
+               </div>       
+               
+
+               <!--RODAPÉ-->
+              
+                <div class="container-fluid dark-bg-color" id="newsletter-container">
+                    <div class="col-12">
+                        <div class="row">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12" id="social-container">
+                        <i class="bi bi-facebook text-light"></i>
+                        <i class="bi bi-instagram text-light"></i>
+                        <i class="bi bi-youtube text-light"></i>
+                        <i class="bi bi-twitter text-light"></i>
+                    </div>
+                    <div class="container" id="copy-container ">
+                        <p class="text-light">Projeto Portfólio IFRN - Campus Canguaretama</p>
+                    </div> 
+  
+                 </footer>
+                </div>
+                
+
+                <!-- VLibras API -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+  
+</body>
+</html>
