@@ -32,39 +32,7 @@
     {% block conteudo %}
     {% endblock %}
 
-               <!--RODAPÉ-->
-              
-                <div class="container-fluid dark-bg-color" id="newsletter-container">
-                    <div class="col-12">
-                        <div class="row">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-12" id="social-container">
-                        <i class="bi bi-facebook text-light"></i>
-                        <i class="bi bi-instagram text-light"></i>
-                        <i class="bi bi-youtube text-light"></i>
-                        <i class="bi bi-twitter text-light"></i>
-                    </div>
-                    <div class="container" id="copy-container ">
-                        <p class="text-light">Projeto Portfólio IFRN - Campus Canguaretama</p>
-                    </div> 
-  
-                 </footer>
-                </div>
-                
-
-                <!-- VLibras API -->
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-            </div>
-        </div>
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>
+    {% include 'publica/rodape.html' %}          
   
 </body>
 </html>
