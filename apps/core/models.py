@@ -12,6 +12,64 @@ class Campi(models.Model):
     nome = models.CharField('Nome', max_length=50)
     def __str__(self):
         return self.nome
+    
+class Area(models.Model):
+    nome = models.CharField('Nome', max_length=50)
+    def __str__(self):
+        return self.nome
+
+class Tipo_Producao(models.Model):
+    Tipo_Producao = models.CharField('Nome', max_length=100)
+    def __str__(self):
+        return self.Tipo_Producao
+
+class Tipo_Usuario(models.Model):
+    nome = models.CharField('Nome', max_length=50)
+    def __str__(self):
+        return self.nome
+    
+class Usuario(models.Model):
+    nome = models.CharField('Nome', max_length=50)
+    def __str__(self):
+        return self.nome
+    
+class Projeto(models.Model):
+    data_inicio = models.CharField('Data_inicio')
+#created_at = models.DateTimeField(auto_now_add=True)
+
+class Producao(models.Model):
+    titulo = models.CharField('Titulo', max_length=50)
+    resumo = models.TextField('Resumo')
+    #Imagem para criar
+    idNucleo = models.ForeignKey(Nucleo, on_delete=models.PROTECT)
+    idUsuario = models.ForeignKey(Usuario, on_delete=models.PROTECT)
+    idTipo_Producao = models.ForeignKey(Tipo_Producao, on_delete=models.PROTECT)
+    def __str__(self):
+        return self.titulo
+    
+class Artigo(models.Model):
+    local_producao = models.CharField('Nome', max_length=100)
+    producao = models.ForeignKey(Producao, on_delete=models.PROTECT)
+    def __str__(self):
+        return self.producao
+    
+#class Projeto_Producao(models.Model):
+ #   idProducao = models.ForeignKey(Producao, on_delete=models.PROTECT)
+ #   idProjeto = models.ForeignKey(Projeto, on_delete=models.PROTECT)
+ #   def __str__(self):
+ #       return self.idProjeto
+    
+#class Campi_Producao(models.Model):
+#    idProducao = models.ForeignKey(Producao, on_delete=models.PROTECT)
+#   idCampi = models.ForeignKey(Campi, on_delete=models.PROTECT)
+#    def __str__(self):
+ #       return self.idProducao
+
+
+
+
+
+
 
 
 
