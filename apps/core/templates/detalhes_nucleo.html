@@ -1,0 +1,43 @@
+{% extends 'publica/base.html' %}
+{% load static %}
+
+{% block conteudo %}
+
+<div class="container my-5"> 
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/pexels-nemuel-6424590.jpg' %}" alt="Núcleo" class="img-fluid rounded">
+
+            <div class="col-12" id="social-container" class="detalhes">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+               
+            </div> 
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="primary-color">TECNOLOGIA DA INFORMAÇÃO</h2> </br>
+            <p class="secondary-color"> 
+                Tecnologia da Informação (TI) abrange o desenvolvimento, a gestão e o suporte de sistemas que otimizam
+                 o processamento e a disseminação de informações. Essencial para organizações, a TI conecta pessoas e processos, 
+                 impulsionando a inovação e a eficiência. Com subáreas como desenvolvimento de software, redes, segurança e
+                  inteligência artificial, a TI é central na transformação digital e no planejamento estratégico, facilitando
+                  comunicação, aprendizado e trabalho remoto. Em constante evolução,é uma área promissora que demanda profissionais 
+                  qualificados para atender às demandas globais.</p>
+
+            <ul>
+
+                <ul style="color: black;">Autor: NOME</ul>
+                <ul style="color: black;">Data: _/_/__</ul>
+
+                
+        
+
+            </ul>
+        
+        </div>
+    </div>
+</div>
+{% endblock %}

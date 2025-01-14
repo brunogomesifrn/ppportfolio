@@ -1,0 +1,32 @@
+{% extends 'publica/base.html' %}
+{% load static %}
+
+{% block conteudo %}
+
+  <div class="container text-center my-5">
+        <h1 class="primary-color">Ações</h1>
+        <p class="secondary-color">Explore as ações disponíveis:</p>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <a href="#" class="btn btn-light border shadow w-100 py-5">Núcleos</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-light border shadow w-100 py-5">Projetos</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-light border shadow w-100 py-5">Produções</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-light border shadow w-100 py-5">Cursos</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-light border shadow w-100 py-5">Áreas</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-light border shadow w-100 py-5">Propriedade Intelectual</a>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock %}

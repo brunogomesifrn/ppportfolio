@@ -1,0 +1,23 @@
+{% extends 'publica/base.html' %}
+{% load static %}
+
+{% block conteudo %}
+
+<div class="form-container">
+    <h2 class="form-title">AUTENTICAÇÃO</h2>
+    <form>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+    </form>
+    <div class="form-footer">
+        <a href="esqueci-senha.html" id="forgot-password">Esqueceu sua senha?</a><br>
+        <span>Ou <a href="registro.html">Criar conta</a></span>
+    </div>
+</div>
+
+{% endblock %}

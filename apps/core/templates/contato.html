@@ -1,0 +1,36 @@
+{% extends 'publica/base.html' %}
+{% load static %}
+
+{% block conteudo %}
+
+    <div class="container py-5">
+        <h2 class="text-center primary-color">CONTATO</h2>
+        <strong><p class="text-center secondary-color">Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e entraremos em contato.</p></strong>
+
+        <form action="#" method="POST" class="mt-4">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" id="name"  placeholder="Digite seu nome" name="name" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" name="email" class="form-control" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <section class="container-left">     
+        
+        <p class="text-center secondary-color">Telefone: (00) 0000-0000</p>
+
+        <p class="text-center secondary-color">Email: 0BZxw@example.com</p>
+    
+    </section>
+    {% endblock %}

@@ -1,5 +1,41 @@
 {% extends 'publica/base.html' %}
+{% load static %}
 
 {% block conteudo %}
+
+<div class="container text-center mt-5" style="border: 2px solid #ccc; border-radius: 10px; padding: 20px; background-color: #f9f9f9;">
+    <h4>Deseja formalizar uma parceria com o IFRN?</h4>
+    <p>Clique aqui e dê o primeiro passo</p>
+    <a href="#" class="btn btn-primary">Clique aqui</a>
+</div>
+
+
+<div class="row text-center mt-4 mb-3 justify-content-center">
+    <h3 class="title titulo">PARCERIAS FORMALIZADAS</h3>
+
+    <div class="col-md-3">
+      <img class="rounded-circle" src="{% static 'img/icone_cursos.png' %}" alt="Generic placeholder image" width="140" height="140">
+      <h2></h2>   
+      <p><a class="btn btn-secondary" href="#" role="button">Instituição 1&raquo;</a></p>
+    </div>
+    
+    <div class="col-md-3">
+      <img class="rounded-circle" src="{% static 'img/icone_areas.png' %}" alt="Generic placeholder image" width="140" height="140">
+      <h2></h2>  
+      <p><a class="btn btn-secondary" href="#" role="button">Instituição 2 &raquo;</a></p>
+    </div>
+    
+    <div class="col-md-3">
+      <img class="rounded-circle" src="{% static 'img/icone_producoes.png' %}" alt="Generic placeholder image" width="140" height="140">
+      <h2></h2>
+      <p><a class="btn btn-secondary" href="#" role="button">Empresa 1 &raquo;</a></p>
+    </div>
+
+    <div class="col-md-3">
+        <img class="rounded-circle" src="{% static 'img/I_F__5_-removebg-preview (1).png' %}" alt="Generic placeholder image" width="140" height="140">
+        <h2></h2>
+        <p><a class="btn btn-secondary" href="#" role="button">Empresa 2 &raquo;</a></p>
+      </div>
+</div>
 
 {% endblock %}

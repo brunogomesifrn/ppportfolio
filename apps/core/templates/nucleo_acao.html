@@ -1,0 +1,58 @@
+{% extends 'publica/base.html' %}
+{% load static %}
+
+{% block conteudo %}
+ 
+<div class="container text-center my-5">
+    <h1 class="primary-color">NÚCLEOS</h1>
+    <p class="secondary-color">Explore os núcleos de pesquisa do IFRN.</p>
+</div>
+
+
+<div class="container my-4 text-center">
+    <h5>Filtrar por categoria:</h5>
+    <div class="btn-group" role="group" aria-label="Filtros">
+        <button class="btn btn-outline-primary filtro" data-filtro="todos">Todos</button>
+        <button class="btn btn-outline-primary filtro" data-filtro="engenharia">Exatas</button>
+        <button class="btn btn-outline-primary filtro" data-filtro="exatas">Humanas</button>
+        
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row" id="nucleos-lista">
+        <div class="col-md-4 mb-4 nucleo" data-categoria="engenharia">
+            <div class="card">
+                <img src="{% static 'img/nucleo1.jpg' %}" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title"> Núcleo de Inovação em Computação - NIC</h5>
+                    <p class="card-text">Atividades focadas em inovação e desenvolvimento tecnológico.</p>
+                    <a href="detalhes.html" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 nucleo" data-categoria="exatas">
+            <div class="card">
+                <img src="{% static 'img/nucleo2.jpg' %}" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Sistemas e Tecnologia para a Internet - </br> TI</h5>
+                    <p class="card-text">Atividade focada em Desenvolvimento de sites e Aplicações Web</p>
+                    <a href="detalhes.html" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 nucleo" data-categoria="tecnologia">
+            <div class="card">
+                <img src="{% static 'img/nucleo3.jpg' %}" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Educação do Campo - <br> Matemática</h5>
+                    <p class="card-text">Atividade Focada em valorização do contexto local </p>
+                    <a href="Nucleos.html" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

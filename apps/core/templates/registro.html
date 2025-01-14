@@ -1,0 +1,28 @@
+{% extends 'publica/base.html' %}
+{% load static %}
+
+{% block conteudo %}
+
+<div class="form-container">
+    <h2 class="form-title">Criar Conta</h2>
+    <form>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome completo" required>
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email-register" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" id="password-register" name="password" placeholder="Digite sua senha" required>
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Criar Conta</button>
+    </form>
+    <div class="form-footer">
+        <span>Já tem uma conta? <a href="login.html">Fazer login</a></span>
+    </div>
+</div>
+
+{% endblock %}

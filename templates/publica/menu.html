@@ -1,9 +1,10 @@
+{% load static %}
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg primary-bg-color py-0 px-2" id="navbar">
     <div class="container">
        
         <a href="#" class="navbar-brand">
-            <img src="img/logo_temp.png" alt="Logo" id="navbar-logo">
+            <img src="{% static 'img/logo_temp.png' %}" alt="Logo" id="navbar-logo">
         </a>
 
         <div class="collapse navbar-collapse" id="navbar-items">
@@ -62,7 +63,7 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link">Parcerias</a></li>
-                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="{% url 'contato' %}" class="nav-link">Contato</a></li>
 
                 
                 <li class="nav-item d-lg-none"> <br>
