@@ -19,7 +19,7 @@ def nucleo_acao(request):
     return render(request, 'nucleo_acao.html')
 
 def pagina_acoes(request):
-    return render(request, 'pagina_acoes')
+    return render(request, 'pagina_acoes.html')
 
 def registro(request):
     return render(request, 'registro.html')
