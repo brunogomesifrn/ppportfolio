@@ -33,11 +33,12 @@ class Projeto(models.Model):
 
 class Producao(models.Model):
     titulo = models.CharField('Titulo', max_length=150)
-    resumo = models.TextField('Resumo')
+    resumo = models.CharField('Resumo', max_length=500)
     imagem = models.ImageField('Imagem', upload_to='producoes', null=True)
     nucleo = models.ForeignKey(Nucleo, on_delete=models.PROTECT)
     tipo_producao = models.ForeignKey(Tipo_Producao, on_delete=models.PROTECT)
-    autor_cadastro = models.ForeignKey(Usuario, related_name='producao_autor_cadastro', on_delete=models.PROTECT)
+    autor_cadastro = models.ForeignKey(Usuario, 
+                    related_name='producao_autor_cadastro', on_delete=models.PROTECT)
     campi = models.ManyToManyField(Campi)
     projetos = models.ManyToManyField(Projeto)
     pesquisadores = models.ManyToManyField(Usuario)
